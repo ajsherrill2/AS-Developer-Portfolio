@@ -1,12 +1,84 @@
 :root {
-    /* theme from Visual Studio Code Blueberry dark theme */
-    --gray-blue: #506477;
-    --pale-blue: #7390aa;
-    --white-blue: #91b4d5;
-    --sky-blue: #add7ff;
-    --toothpaste-white: #e4f0fb;
-    --bright-mint: #27e8a7;
-    --pale-mint: #32ae85;
-    --gray-mint: #42675a;
-    --bright-red: #df4576;
+    /* theme from https://www.color-hex.com/color-palette/98179 dark theme */
+    --blue: #007acc;
+    --gray-1: #c0c0c0;
+    --gray-2: #3e3e42;
+    --gray-3: #2d2d30;
+    --black-1: #252526;
+    --black-2: #1e1e1e;
+}
+
+body {
+    margin: 0;
+    background: var(--gray-3);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--gray-1);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: var(--black-2);
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 30px;
+
+    position: relative;
+}
+
+nav a {
+    color: var(--gray-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: whitesmoke;
+    transition: all ease-out 250ms;
+}
+
+nav a:before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--gray-1);
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
 }
