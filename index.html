@@ -15,19 +15,19 @@
 
 <body>
 
-    <header>
+    <header id="top">
         <div class="container">   
             <h1 class="logo">Adam Sherrill</h1>
             <nav>
                 <ul>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>   
                     <li>
                         <a href="https://www.instagram.com/aj.sherrill/" title="Follow me on Instagram" target="_blank">Instagram</a>
@@ -45,77 +45,69 @@
             </nav>
         </div>
     </header>
-
-    <!-- removed for now
-    <figure class="background-img">
-        <img src="./assets/images/Glacier.jpg.JPG" alt="Image of Glacier National Park">
-    </figure>
-    -->
     
     <main>
-        <section>
-            <h2>developer.</h2>
+        <section class="flex-container">
             <div>
+                <h2 id="developer">developer.</h2>
                 <p>You can never rise without first learning to fall.</p>
             </div>
         </section>
-        <hr> <!--Remove this if you can find a different way to split up sections-->
-        <section>
-            <div>   
-                <h2>about.</h2>
-                <p class="intro">I am a web developer and designer from Austin, Texas.</p>
+        <hr>
+        <section class="flex-container">
+            <div id="about">   
+                <h2 class="title">about.</h2>
+                <p class="intro">I am a <span>web developer</span> and <span>designer</span> from Austin, Texas.</p>
                 <p class="description">
                     Apart from a adrenaline filled live in the outdoors skiing champaigne powder in the Rockies 
                     and climbing the limestone of the the Grand Tetons, you will find me disecting complex problems 
                     into clean and accessible web designs.
                 </p>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <img src="./assets/images/skiing.jpg.JPG" alt="Image of Adam skiing" style="width: 200px; height: 200px;">
-                    </li>
-                    <li>
-                        <img src="./assets/images/friends-skiing.jpg.JPG" alt="Image of friends at ski resort" style="width: 200px; height: 200px;">
-                    </li>
-                    <li>
-                        <img src="./assets/images/climbing.jpg.JPG" alt="Image of climbing in the Tetons" style="width: 200px; height: 200px;">
-                    </li>
-                    <li>
-                        <img src="./assets/images/me-shay.jpg.JPG" alt="Image of Girlfriend" style="width: 200px; height: 200px;">
-                    </li>
-                </ul>
+                <div class="flex-wrap"> <!--change this to something semantic-->
+                        <figure class="col">
+                            <img src="./assets/images/skiing.jpg.JPG" alt="Image of Adam skiing" style="width: 250px; height: 250px;">
+                        </figure>
+                        <figure class="col">
+                            <img src="./assets/images/friends-skiing.jpg.JPG" alt="Image of friends at ski resort" style="width: 250px; height: 250px;">
+                        </figure>
+                        <figure class="col">
+                            <img src="./assets/images/climbing.jpg.JPG" alt="Image of climbing in the Tetons" style="width: 250px; height: 250px;">
+                        </figure>
+                        <figure class="col">
+                            <img src="./assets/images/me-shay.jpg.JPG" alt="Image of Girlfriend" style="width: 250px; height: 250px;">
+                        </figure>
+                </div>
             </div>
         </section>
-        <hr> <!--Remove this if you can find a different way to split up sections-->
-        <section>
-            <div>
+        <hr>
+        <section class="flex-container">
+            <div id="projects">
                 <h2>projects.</h2>
                 <p class="intro">Look at some of my recent work.</p>
                 <p class="description">More projects coming soon!</p>
+                <aside class="flex-wrap">
+                    <figure class="card">
+                        <h3>Refactoring Webpages</h3>
+                        <p>insert text</p>
+                    </figure>
+                    <figure class="card">
+                        <h3>Coming Soon</h3>
+                        <p>insert text</p>
+                    </figure>
+                    <figure class="card">
+                        <h3>Coming Soon</h3>
+                        <p>insert text</p>
+                    </figure>
+                    <figure class="card">
+                        <h3>Coming Soon</h3>
+                        <p>insert text</p>
+                    </figure>
+                </aside>
             </div>
-            <aside class="projects">
-                <figure class="card">
-                    <h3>Refactoring Webpages</h3>
-                    <p>insert text</p>
-                </figure>
-                <figure class="card">
-                    <h3>Coming Soon</h3>
-                    <p>insert text</p>
-                </figure>
-                <figure class="card">
-                    <h3>Coming Soon</h3>
-                    <p>insert text</p>
-                </figure>
-                <figure class="card">
-                    <h3>Coming Soon</h3>
-                    <p>insert text</p>
-                </figure>
-            </aside>
         </section>
-        <hr> <!--Remove this if you can find a different way to split up sections-->
-        <section>
-            <div>
+        <hr>
+        <section class="flex-container">
+            <div id="contact">
                 <h2>contact.</h2>
                 <p class="intro">Reach me at these domains or shoot me an email.</p>
                 <ul class="social-hub">
@@ -155,9 +147,9 @@
             </div>
         </section>
     </main>
-
+    <hr>
     <footer>
-        <h2>© 2022 Adam Sherrill</h2>
+        <h2> <a href="#top">© 2022 Adam Sherrill</a></h2>
     </footer>
     
 </body>

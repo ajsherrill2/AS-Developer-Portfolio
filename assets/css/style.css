@@ -8,12 +8,17 @@
     --black-2: #1e1e1e;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     margin: 0;
     background: var(--gray-3);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: var(--gray-1);
+    line-height: 1.6;
 }
 
 .container {
@@ -81,4 +86,33 @@ nav a:before {
 
 nav a:hover::before {
     width: 100%;
+}
+
+.flex-container {
+    margin: 100px;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 25px 50px 25px 50px;
+}
+
+.flex-wrap > * {
+    flex: 1 2 10em;
+}
+
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5%;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to bottom, var(--black-2), var(--gray-3));
 }
