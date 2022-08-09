@@ -1,5 +1,6 @@
 :root {
     /* theme from https://www.color-hex.com/color-palette/98179 dark theme */
+    --white: #fff;
     --blue: #007acc;
     --gray-1: #c0c0c0;
     --gray-2: #3e3e42;
@@ -13,7 +14,9 @@ html {
 }
 
 body {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
     background: var(--gray-3);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -21,6 +24,61 @@ body {
     line-height: 1.6;
 }
 
+li, a {
+    text-decoration: none;
+    color: var(--gray-1);
+}
+
+header {
+    display: flex;
+     /* Pushes left and right item to for edges and items in middle will be evenly spaced */
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: var(--black-2);
+    box-shadow: 0 1px 8px var(--black-2);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    margin-left: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: var(--white);
+}
+
+nav a:before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 50%;
+    background-color: var(--gray-1);
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 50%;
+}
+/*
 .container {
     width: 80%;
     margin: 0 auto;
@@ -29,18 +87,28 @@ body {
 header {
     background: var(--black-2);
 }
-
+/*
 header::after {
     content: '';
     display: table;
     clear: both;
 }
 
+
+.container {
+    display: flex;
+}
+
 .logo {
+    display: flex;
+    align-items: center;
+    
     float: left;
 }
 
 nav {
+    display: flex;
+    justify-content: flex-end;
     float: right;
 }
 
@@ -87,6 +155,41 @@ nav a:before {
 nav a:hover::before {
     width: 100%;
 }
+*/
+/*--------------------------------------------------------------------------*/
+/* Header 
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px var(--black-2);
+}
+
+#logo {
+    margin-right: 100px;
+    font-size: 2rem;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--gray-1);
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: #fff;
+}
+*/
+/*-------------------------------------------------------------------------*/
+
+
 
 .flex-container {
     margin: 100px;
