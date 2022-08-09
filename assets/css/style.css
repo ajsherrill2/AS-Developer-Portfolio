@@ -7,6 +7,7 @@
     --gray-3: #2d2d30;
     --black-1: #252526;
     --black-2: #1e1e1e;
+    --box-shadow: 0 1px 4px 0px rgb(0 0 0 / 20%);
 }
 
 html {
@@ -73,7 +74,10 @@ header {
 }
 
 .flex-container {
-    margin: 100px;
+    margin: 5% 10% 5% 10%;
+    padding: 50px;
+    background: var(--gray-2);
+    box-shadow: var(--box-shadow);
 }
 
 .flex-wrap {
@@ -88,15 +92,65 @@ header {
 }
 
 img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 200px;
+    width: 200px;
+    box-shadow: var(--box-shadow);
     border: none;
     margin: 0;
     padding: 0;
     border-radius: 5%;
 }
 
-hr {
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: fit-content;
+    padding: 10px;
+    margin: 0 50px 0 50px;
     border: none;
-    height: 3px;
-    background: linear-gradient(to bottom, var(--black-2), var(--gray-3));
+    background: var(--gray-2);
+    border-radius: 5%;
+    box-shadow: var(--box-shadow);
+}
+
+.card:hover {
+    box-shadow: 0 1px 8px 3px rgb(0 0 0 / 20%);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: ;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
 }
