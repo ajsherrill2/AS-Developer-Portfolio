@@ -158,7 +158,15 @@ img {
     margin: 0 2% 0 2%;
 }
 
+.social-hub form {
+    
+}
+
 /* Footer */
+footer h2 {
+    font-size: 1rem;
+    padding: 2%;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {

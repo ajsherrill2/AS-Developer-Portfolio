@@ -2,12 +2,7 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+In this project I was tasked  with creating a personal web developer portfolio, something that looked clean but also responsive to provide a catelog of my work and projects for employers to view. In this project I learned the importance of flexbox design and became more intune with styling in CSS as a whole.
 
 ## Table of Contents (Optional)
 
@@ -20,9 +15,21 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+The first steps towards installing my project where to write up a wireframe, in my case I used pencil and paper since I already had a great idea for my layout. 
+
+Now I must create a safe repository to save my files to. Using the terminal and GitHub I can create a commit all changes to my live repository. I will do this as often as I can throughout the entire project.
+
+After i had some heading to my idea the next appropriate step was to create a detailed semantic HTML. In this case I have a head followed by a body and within this body are semantic tags including a header with a navbar, a main section with multiple sub sections to represent pages within the HTML and lastly a footer to close off my webpage.
+
+The HTML is not completely finished at this point but it then becomes important to add a link to a CSS file where I implement styles to elements, classes, and ID's.
+
+I have now gotten my web page to look pretty but only on a desktop screen, it is also important to have a resposive design. I achieved this by using flexbox containers, percentages, rem, and media queries.
 
 ## Usage
+
+You can find my webpage at https://ajsherrill2.github.io/AS-Developer-Portfolio/
+
+
 
 Provide instructions and examples for use. Include screenshots as needed.
 
