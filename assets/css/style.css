@@ -119,6 +119,7 @@ h2 {
 }
 
 img {
+    position: relative;
     height: auto;
     max-width: 100%;
     min-width: 100px;
@@ -142,10 +143,13 @@ img {
     background: var(--black-1);
     border-radius: 5%;
     box-shadow: var(--box-shadow);
+
+    transition: all .5s ease-in-out;
 }
 
 .card:hover {
     box-shadow: 0 1px 8px 3px rgb(0 0 0 / 20%);
+    transform: scale(1.1);
 }
 
 .social-hub {
@@ -158,8 +162,15 @@ img {
     margin: 0 2% 0 2%;
 }
 
-.social-hub form {
-    
+.email-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.form-contact-email {
+    margin-top: 2%;
 }
 
 /* Footer */
