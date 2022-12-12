@@ -4,7 +4,7 @@
 
 In this project I was tasked  with creating a personal web developer portfolio, something that looked clean but also responsive to provide a catelog of my work and projects for employers to view. In this project I learned the importance of flexbox design and became more intune with styling in CSS as a whole.
 
-## Table of Contents (Optional)
+## Table of Contents
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
